@@ -1,0 +1,1 @@
+java -cp lib/jade.jar:target/Alchemists-1.0-SNAPSHOT.jar jade.Boot -gui -agents 'alchemist:pl.gda.pg.eti.kask.sa.alchemists.agents.Alchemist('Potion');herbalist:pl.gda.pg.eti.kask.sa.alchemists.agents.Herbalist('Marijuana');armorist:pl.gda.pg.eti.kask.sa.alchemists.agents.Armorist('Plate');mage:pl.gda.pg.eti.kask.sa.alchemists.agents.Mage'

@@ -34,9 +34,10 @@ public class Alchemist extends BaseAgent {
         Object[] arguments = getArguments();
         if(arguments != null){
             for(Object arg : arguments) {
-                if (arg instanceof Potion)
-                    potions.add((Potion) arg);
+                    potions.add( new Potion(arg.toString()));
             }
         }
     }
+    
+    
 }

@@ -30,7 +30,7 @@ public class Mage extends BaseAgent {
             protected void onResult(DFAgentDescription[] services) {
                 if (services != null && services.length > 0) {
                     AID alchemist = services[0].getName();
-                    SellPotion action = new SellPotion(new Potion("Heroic Potion"));
+                    SellPotion action = new SellPotion(new Potion("Potion"));
                     RequestPotionBehaviour request = new RequestPotionBehaviour(Mage.this, alchemist, action);
                     ((SequentialBehaviour) getParent()).addSubBehaviour(request);
 
@@ -44,7 +44,7 @@ public class Mage extends BaseAgent {
             protected void onResult(DFAgentDescription[] services) {
                 if (services != null && services.length > 0) {
                     AID herbalist = services[0].getName();
-                    SellHerb action = new SellHerb(new Herb("Peacebloom"));
+                    SellHerb action = new SellHerb(new Herb("Marijuana"));
                     RequestHerbBehaviour request = new RequestHerbBehaviour(Mage.this, herbalist, action);
                     ((SequentialBehaviour) getParent()).addSubBehaviour(request);
 
@@ -57,7 +57,7 @@ public class Mage extends BaseAgent {
             protected void onResult(DFAgentDescription[] services) {
                 if (services != null && services.length > 0) {
                     AID armorist = services[0].getName();
-                    SellArmor action = new SellArmor(new Armor("Plate Armor"));
+                    SellArmor action = new SellArmor(new Armor("PlateArmor"));
                     RequestArmorBehaviour request = new RequestArmorBehaviour(Mage.this, armorist, action);
                     ((SequentialBehaviour) getParent()).addSubBehaviour(request);
 
