@@ -31,8 +31,7 @@ public class Armorist extends BaseAgent {
         Object[] arguments = getArguments();
         if(arguments != null){
             for(Object arg : arguments) {
-                if (arg instanceof Armor)
-                    armors.add((Armor) arg);
+                 armors.add(new Armor(arg.toString()));
             }
         }
     }

@@ -36,8 +36,7 @@ public class Herbalist extends BaseAgent {
         Object[] arguments = getArguments();
         if(arguments != null){
             for(Object arg : arguments) {
-                if (arg instanceof Herb)
-                    herbs.add((Herb) arg);
+                herbs.add(new Herb(arg.toString()));
             }
         }
     }
